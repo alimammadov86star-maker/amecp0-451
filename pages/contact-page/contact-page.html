@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <include id="header" src="../../companents/header/header-companent.html"></include>
+
+    <div class="content h-screen flex p-4 items-center justify-center">
+        <div class="w-full h-full border p-4">
+            <h2 class="text-4xl font-bold">Contact</h2>
+            <div class="w-full h-[700px] flex">
+                <div class="w-[30%] flex flex-col p-4 justify-center">
+                    <div class="flex items-center space-x-4">
+                        <img src="../../svg/icons-phone.svg" alt="">
+                        <span class="text-xl font-bold ">Call to us</span>
+                    </div>
+                    <p class="text-xl mt-4">We are available 24/7, 7 days a week.</p>
+                    <p class="text-xl">Phone: +8801611112222</p>
+                    <hr class="block my-4">
+
+                    <div class="flex items-center space-x-4">
+                        <img src="../../svg/icons-mail.svg" alt="">
+                        <span class="text-xl font-bold ">Write to us</span>
+                    </div>
+                    <p class="text-xl mt-4">Fill out our form and we will contact you within 24 hours.</p>
+                    <p class="text-xl">Emails: customer@exclusive.com</p>
+                    <p class="text-xl">Emails: support@exclusive.com</p>
+                    <hr class="block my-4">
+                </div>
+                <div class="w-[70%] flex justify-center items-center h-full">
+                    <div class="shadow p-4 border w-[80%] h-[80%]">
+                        <ul class="flex space-between">
+                            <li>
+                                <p>Your name</p>
+                                <input placeholder="Enter your name" class="px-3 py-2 border bg-white" type="text">
+                            </li>
+                            <li>
+                                <p>Your email</p>
+                                <input placeholder="Enter your email" class="px-3 py-2 border bg-white" type="email">
+                            </li>
+                            <li>
+                                <p>Your phone</p>
+                                <input placeholder="Enter your phone number" class="px-3 py-2 border bg-white" type="tel">
+                            </li>
+                        </ul>
+
+                        <p>Your Message</p>
+                        <textarea class="bg-white h-[200px] w-full border" cols="5" name="" id=""></textarea>
+
+                        <button class="px-3 py-2 text-white bg-red-500 hover-bg-red-600 rounded-xl font-medium text-md cursor-pointer">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <include id="footer" src="../../companents/footer/footer-companent.html"></include>
+
+    <script type="module" src="../../utils/include.js"></script>
+</body>
+</html>

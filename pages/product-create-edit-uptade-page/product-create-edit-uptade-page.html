@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <include id="header" src="../../companents/header/header-companent.html"></include>
+    <main class="min-h-screen bg-white py-10 px-6">
+        <h1 class="text-center text-[42px] font-bold text-gray-800 mb-14">
+            Create product
+        </h1>
+
+        <form class="max-w-[650px] mx-auto">
+            <label class="block mb-1 text-[16px] text-gray-800">Brand</label>
+            <input type="text" class="w-full h-[40px] border border-gray-200 rounded-md px-3 mb-1 outline-none" />
+
+            <label class="block mb-1 text-[16px] text-gray-800">Model</label>
+            <input type="text" class="w-full h-[40px] border border-gray-200 rounded-md px-3 mb-1 outline-none" />
+
+            <label class="block mb-1 text-[16px] text-gray-800">Category</label>
+            <input type="text" class="w-full h-[40px] border border-gray-200 rounded-md px-3 mb-1 outline-none" />
+
+            <label class="block mb-1 text-[16px] text-gray-800">Description</label>
+            <textarea
+                class="w-full h-[95px] border border-gray-200 rounded-md px-3 py-2 mb-1 outline-none resize-y"></textarea>
+
+            <label class="block mb-1 text-[16px] text-gray-800">Price</label>
+            <input type="number" class="w-full h-[40px] border border-gray-200 rounded-md px-3 mb-1 outline-none" />
+
+            <label class="block mb-1 text-[16px] text-gray-800">Rating</label>
+            <input type="number" class="w-full h-[40px] border border-gray-200 rounded-md px-3 mb-1 outline-none" />
+
+            <label class="block mb-1 text-[16px] text-gray-800">Image URL</label>
+            <input type="text" class="w-full h-[40px] border border-gray-200 rounded-md px-3 mb-2 outline-none" />
+
+            <div class="mb-8 text-gray-700">
+                <img src="" alt="Preview" class="inline-block" />
+            </div>
+
+            <div class="flex gap-2">
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md">
+                    Save
+                </button>
+
+                <button type="reset" class="bg-yellow-400 text-black px-4 py-2 rounded-md">
+                    Reset
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <include id="footer" src="../../companents/footer/footer-companent.html"></include>
+
+    <script type="module" src="../../utils/include.js"></script>
+</body>
+</html>

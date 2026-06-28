@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <include id="header" src="../../companents/header/header-companent.html"></include>
+
+    <div class="content h-screen flex items-center justify-center">
+        <form class="w-[400px] space-y-3 p-3">
+            <h2 class="font-medium text-4xl text-center">Log in</h2>
+            <p>Username</p>
+            <input type="text" class="w-full bg-white border border-gray-400 rounded-md px-1 py-2">
+
+            <p>Password</p>
+            <input type="password" class="w-full bg-white border border-gray-400 rounded-md px-1 py-2">
+
+            <button type="submit" class="w-full py-3 bg-red-500 rounded-md text-white font-medium hover:bg-red-600
+            cursor-pointer">Log in</button>
+
+            <p class="font-medium text-center">Don't have account <a class="text-red-500" href="#">Sign up</a></p>
+        </form>
+    </div>
+
+    <include id="footer" src="../../companents/footer/footer-companent.html"></include>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="../../utils/include.js"></script>
+</body>
+</html>

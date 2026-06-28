@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <include id="header" src="../../companents/header/header-companent.html"></include>
+
+    <section class="max-w-[1200px] mx-auto py-10 px-6">
+        <h1 class="text-3xl font-bold mb-10">Product page</h1>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div class="bg-[#f5f5f5] p-10 flex justify-center">
+                <img src="../../svg/image 81.png" alt="Product" class="w-full max-w-[520px]" />
+            </div>
+
+            <div class="pt-2">
+                <h2 class="text-2xl font-semibold mb-3">Havic HV G-92 Gamepad</h2>
+
+                <div class="flex items-center gap-3 mb-3 text-sm">
+                    <span class="text-yellow-400">★★★★★</span>
+                    <span class="text-gray-500">(150 Reviews)</span>
+                    <span class="text-gray-300">|</span>
+                    <span class="text-green-500">In Stock</span>
+                </div>
+
+                <p class="text-2xl mb-5">$192.00</p>
+
+                <p class="text-sm leading-6 max-w-[420px] mb-6">
+                    PlayStation 5 Controller Skin High quality vinyl with air channel
+                    adhesive for easy bubble free install & mess free removal Pressure
+                    sensitive.
+                </p>
+
+                <hr class="mb-10" />
+
+                <a href="../../pages/cart-page/cart-page.html">
+                    <button class="bg-[#db4444] text-white px-12 py-3 rounded hover:bg-red-600">
+                        Add to cart
+                    </button>
+                </a>
+
+                <div class="border border-gray-400 rounded mt-10 max-w-[420px]">
+                    <div class="flex gap-4 p-5 border-b border-gray-400">
+                        <span class="text-2xl">🚚</span>
+                        <div>
+                            <h4 class="font-semibold">Free Delivery</h4>
+                            <p class="text-xs underline">
+                                Enter your postal code for Delivery Availability
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 p-5">
+                        <span class="text-2xl">↩</span>
+                        <div>
+                            <h4 class="font-semibold">Return Delivery</h4>
+                            <p class="text-xs">
+                                Free 30 Days Delivery Returns. <span class="underline">Details</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-24">
+            <div class="flex items-center gap-3 mb-10">
+                <span class="w-5 h-10 bg-[#db4444] rounded"></span>
+                <h3 class="text-[#db4444] font-semibold">Related Item</h3>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="bg-[#f5f5f5] p-8 h-[250px] flex items-center justify-center">
+                        <img src="../../svg/Frame 570.png" class="max-h-full" />
+                    </div>
+                    <h4 class="font-semibold mt-4">HAVIT HV-G92 Gamepad</h4>
+                    <p class="text-[#db4444] mt-2">$120 <span class="text-gray-400 line-through ml-2">$160</span></p>
+                    <p class="text-yellow-400 text-sm">★★★★★ <span class="text-gray-500">(88)</span></p>
+                </div>
+
+                <div>
+                    <div class="bg-[#f5f5f5] p-8 h-[250px] flex items-center justify-center relative">
+                        <img src="../../svg/Frame 570 (1).png" class="max-h-full" />
+                    </div>
+                    <h4 class="font-semibold mt-4">AK-900 Wired Keyboard</h4>
+                    <p class="text-[#db4444] mt-2">$960 <span class="text-gray-400 line-through ml-2">$1160</span></p>
+                    <p class="text-yellow-400 text-sm">★★★★☆ <span class="text-gray-500">(75)</span></p>
+                </div>
+
+                <div>
+                    <div class="bg-[#f5f5f5] p-8 h-[250px] flex items-center justify-center">
+                        <img src="../../svg/Frame 570 (2).png" class="max-h-full" />
+                    </div>
+                    <h4 class="font-semibold mt-4">IPS LCD Gaming Monitor</h4>
+                    <p class="text-[#db4444] mt-2">$370 <span class="text-gray-400 line-through ml-2">$400</span></p>
+                    <p class="text-yellow-400 text-sm">★★★★★ <span class="text-gray-500">(99)</span></p>
+                </div>
+
+                <div>
+                    <div class="bg-[#f5f5f5] p-8 h-[250px] flex items-center justify-center">
+                        <img src="../../svg/Cart.png" class="max-h-full" />
+                    </div>
+                    <h4 class="font-semibold mt-4">RGB liquid CPU Cooler</h4>
+                    <p class="text-[#db4444] mt-2">$160 <span class="text-gray-400 line-through ml-2">$170</span></p>
+                    <p class="text-yellow-400 text-sm">★★★★★ <span class="text-gray-500">(65)</span></p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <include id="footer" src="../../companents/footer/footer-companent.html"></include>
+
+    <script type="module" src="../../utils/include.js"></script>
+</body>
+
+</html>
